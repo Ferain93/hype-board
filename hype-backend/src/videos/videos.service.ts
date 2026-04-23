@@ -21,12 +21,16 @@ export class VideosService {
   private transform(item: YoutubeVideoRaw): VideoClean {
     return {
       id: item.id,
-      title: item.snippet.title,
+      title: this.getTitle(item.snippet.title),
       author: item.snippet.channelTitle,
       thumbnail: item.snippet.thumbnails.high.url,
       publishedAt: this.getRelativeTime(item.snippet.publishedAt),
       hypeLevel: this.calculateHype(item),
     };
+  }
+
+  private getTitle(title: string): string {
+    return title.replace(/tutorial/gi, 'Tutorial');
   }
 
   private calculateHype(item: YoutubeVideoRaw): number {
