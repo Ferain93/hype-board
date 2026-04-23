@@ -1,3 +1,5 @@
+import SmartImage from './SmartImage';
+
 function VideoCard({ video, isJewel }) {
   const hypePercent = Math.round(video.hypeLevel * 100);
 
@@ -9,13 +11,9 @@ function VideoCard({ video, isJewel }) {
           Joya de la Corona
         </div>
       )}
-      <img
+      <SmartImage
         src={video.thumbnail}
         alt={video.title}
-        onError={(e) => {
-          e.target.onerror = null;
-          e.target.src = `https://loremflickr.com/300/200/technology,coding?lock=${video.id}`;
-        }}
       />
       <div className="card-body">
         <h3>{video.title}</h3>
