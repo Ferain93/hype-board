@@ -1,0 +1,35 @@
+/* ── Toast ── */
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 12px;
+  background: rgba(224, 41, 47, 0.75);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.35);
+  max-width: 340px;
+  animation: toast-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.toast__message {
+  margin: 0;
+  line-height: 1.4;
+}
+
+@keyframes toast-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

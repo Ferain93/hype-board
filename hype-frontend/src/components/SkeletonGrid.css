@@ -1,0 +1,135 @@
+/* ── Skeleton Shimmer Animation ── */
+.skeleton-pulse {
+  background: linear-gradient(
+    110deg,
+    #f0ebe4 30%,
+    #fde5cc 50%,
+    #f0ebe4 70%
+  );
+  background-size: 300% 100%;
+  animation: skeleton-shimmer 1.6s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ── Skeleton Wrapper ── */
+.skeleton-wrapper {
+  width: 100%;
+}
+
+/* ── Skeleton Card (normal) ── */
+.skeleton-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ede8e0;
+}
+
+.skeleton-card .skeleton-img {
+  width: 100%;
+  height: 165px;
+}
+
+.skeleton-card .skeleton-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.skeleton-card .skeleton-title {
+  height: 14px;
+}
+
+.skeleton-card .skeleton-meta {
+  height: 12px;
+  margin-top: 0.15rem;
+}
+
+.skeleton-card .skeleton-hype-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.skeleton-card .skeleton-hype-label {
+  height: 12px;
+  width: 80px;
+}
+
+.skeleton-card .skeleton-hype-pill {
+  height: 28px;
+  width: 72px;
+  border-radius: 20px;
+}
+
+/* ── Skeleton Jewel Card ── */
+.skeleton-jewel {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgba(253, 186, 116, 0.3);
+  border-radius: 16px;
+  margin-bottom: 0;
+  min-height: 240px;
+}
+
+.skeleton-jewel .skeleton-img {
+  width: 55%;
+  min-width: 55%;
+  height: auto;
+  min-height: 240px;
+  border-radius: 0;
+}
+
+.skeleton-jewel .skeleton-body {
+  padding: 2.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skeleton-jewel .skeleton-badge {
+  height: 26px;
+  width: 150px;
+  border-radius: 9999px;
+}
+
+.skeleton-jewel .skeleton-title {
+  height: 20px;
+}
+
+.skeleton-jewel .skeleton-meta {
+  height: 14px;
+}
+
+.skeleton-jewel .skeleton-hype {
+  height: 44px;
+  width: 140px;
+  border-radius: 12px;
+}
+
+/* ── Skeleton Divider ── */
+.skeleton-divider {
+  height: 3px;
+  width: 100%;
+  margin: 1.2rem 0;
+  border-radius: 4px;
+}
+
+/* ── Skeleton Section Title ── */
+.skeleton-section-title {
+  height: 18px;
+  width: 220px;
+  margin-bottom: 1.2rem;
+}

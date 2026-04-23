@@ -1,5 +1,6 @@
 import { useVideos } from './hooks/useVideos';
 import VideoGrid from './components/VideoGrid';
+import Toast from './components/Toast';
 import './App.css';
 
 function App() {
@@ -16,12 +17,17 @@ function App() {
       </header>
 
       <main className="main">
-        {loading && (
-          <div className="state-msg">⏳ Cargando videos...</div>
+        {(loading || error) && (
+          <div className="state-msg">
+            <div className="spinner" />
+            <span>Cargando videos...</span>
+          </div>
         )}
+
         {error && (
-          <div className="state-msg error">❌ {error}</div>
+          <Toast message="No pudimos traer los videos. Por favor, reintenta nuevamente en unos segundos." />
         )}
+
         {!loading && !error && <VideoGrid videos={videos} />}
       </main>
     </div>
