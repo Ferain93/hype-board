@@ -200,4 +200,4 @@ El proyecto está configurado para deploy como monorepo en **Vercel**:
 - Frontend: build estático con Vite
 - Backend: serverless function con `@vercel/node`
 
-> 🔗 **URL de producción:** _Pendiente — se actualizará al publicar_
+> 🔗 **URL de producción:** https://hype-board-sigma.vercel.app/
