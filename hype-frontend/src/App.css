@@ -318,3 +318,38 @@ body {
   0%, 100% { box-shadow: 0 0 0px rgba(244, 63, 94, 0); }
   50%       { box-shadow: 0 0 10px rgba(244, 63, 94, 0.5); }
 }
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .app {
+    padding: 1.5rem 1rem;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .video-card.jewel {
+    flex-direction: column;
+  }
+
+  .video-card.jewel img {
+    width: 100%;
+    min-width: 100%;
+    height: 220px;
+  }
+
+  .video-card.jewel .card-body {
+    padding: 1.5rem;
+  }
+
+  .video-card.jewel .card-body h3 {
+    font-size: 1.15rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 424px) {
+  .tv-icon {
+    display: none;
+  }
+}
